@@ -1,1 +1,4 @@
-TOKEN = '6112862497:AAEV6UrVJYs8EJ6_YfCZlTcRW5HRJ1JSStk'
+import os
+from dotenv import load_dotenv
+load_dotenv()
+TOKEN = os.environ.get('TOKEN') #внутри кавычек должны писать нужную переменную из env
